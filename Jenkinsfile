@@ -2,7 +2,7 @@ node {
     echo 'Started my pipeline job'
     stage("Build") {
         deleteDir()
-        scm checkout
+        checkout scm
         sh 'ls'
         sh 'mvn clean install'
         echo 'Building code here ...'
