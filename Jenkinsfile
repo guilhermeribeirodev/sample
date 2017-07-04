@@ -2,7 +2,7 @@ node {
     echo 'Started my pipeline job'
     stage("Build") {
         deleteDir()
-        git 'https://github.com/guilhermeribeirodev/sample.git'
+        scm checkout
         sh 'ls'
         sh 'mvn clean install'
         echo 'Building code here ...'
