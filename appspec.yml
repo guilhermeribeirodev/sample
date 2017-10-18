@@ -9,7 +9,7 @@ files:
 
 permissions:
     - object: ./app_run.sh
-      owner: ec2-user
+      owner: root
       mode: 777
       type:
         - file
