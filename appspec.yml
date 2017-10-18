@@ -7,14 +7,15 @@ files:
   - source: app_run.sh
     destination: /tmp
 
-hooks:
-  ApplicationStart:
-      - location: app_run.sh
-        timeout: 180
-
 permissions:
     - object: app_run.sh
       owner: root
       mode: 777
       type:
         - file
+
+hooks:
+  ApplicationStart:
+      - location: app_run.sh
+        timeout: 180
+
