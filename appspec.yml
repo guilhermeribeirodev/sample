@@ -3,3 +3,8 @@ os: linux
 files:
   - source: target/sample-1.0-jar-with-dependencies.jar
     destination: /tmp
+
+hooks:
+  ApplicationStart:
+      - location: app_scripts/run.sh
+        timeout: 180
