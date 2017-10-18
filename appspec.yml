@@ -4,10 +4,10 @@ files:
   - source: target/sample-1.0-jar-with-dependencies.jar
     destination: /tmp
 
-  - source: ~/app_scripts/run.sh
+  - source: app_run.sh
     destination: /tmp
 
 hooks:
   ApplicationStart:
-      - location: /tmp/app_scripts/run.sh
+      - location: /tmp/app_run.sh
         timeout: 180
