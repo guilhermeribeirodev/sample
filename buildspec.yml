@@ -18,3 +18,4 @@ artifacts:
   files:
     - target/sample-1.0-jar-with-dependencies.jar
     - appspec.yml
+    - app_run.sh
