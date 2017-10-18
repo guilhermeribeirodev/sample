@@ -9,5 +9,5 @@ files:
 
 hooks:
   ApplicationStart:
-      - location: /tmp/app_run.sh
+      - location: app_run.sh
         timeout: 180
