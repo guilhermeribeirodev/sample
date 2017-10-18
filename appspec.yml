@@ -16,6 +16,5 @@ permissions:
     - object: app_run.sh
       owner: root
       mode: 777
-
       type:
         - file
