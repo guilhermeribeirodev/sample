@@ -15,7 +15,7 @@ permissions:
         - file
 
 hooks:
-  ApplicationStart:
+  AfterInstall:
       - location: ./app_run.sh
         timeout: 180
 
