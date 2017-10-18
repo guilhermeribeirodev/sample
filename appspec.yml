@@ -4,18 +4,18 @@ files:
   - source: target/sample-1.0-jar-with-dependencies.jar
     destination: /tmp
 
-  - source: app_run.sh
+  - source: ./app_run.sh
     destination: /tmp
 
 permissions:
-    - object: app_run.sh
-      owner: root
+    - object: ./app_run.sh
+      owner: ec2-user
       mode: 777
       type:
         - file
 
 hooks:
   ApplicationStart:
-      - location: app_run.sh
+      - location: ./app_run.sh
         timeout: 180
 
