@@ -25,11 +25,11 @@ permissions:
 
 hooks:
   ApplicationStop:
-      - location: app_stop.sh
+      - location: /tmp/app_stop.sh
         timeout: 180
         runas: root
   ApplicationStart:
-      - location: app_run.sh
+      - location: /tmp/app_run.sh
         timeout: 180
         runas: root
 
