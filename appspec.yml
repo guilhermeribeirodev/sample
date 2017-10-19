@@ -17,13 +17,19 @@ permissions:
       type:
         - file
 
+    - object: /tmp/app_stop.sh
+      owner: root
+      mode: 777
+      type:
+        - file
+
 hooks:
   ApplicationStop:
       - location: app_stop.sh
         timeout: 180
-        runas: ec2-user
+        runas: root
   ApplicationStart:
       - location: app_run.sh
         timeout: 180
-        runas: ec2-user
+        runas: root
 
