@@ -35,7 +35,7 @@
           </descriptorRefs>
           <archive>
             <manifest>
-              <mainClass>org.test.Main</mainClass>
+              <mainClass>org.test.Application</mainClass>
             </manifest>
           </archive>
         </configuration>
