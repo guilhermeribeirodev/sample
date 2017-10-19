@@ -11,6 +11,15 @@ public class Main
     {
         //remove the line below and replace with your code.
         String name = System.getenv("CUSTOMER");
-        System.out.println( "The customer is : " + name );
+        for(int i = 0;i<1000000L;i++){
+
+            try {
+                Thread.sleep(1000);
+                System.out.println( "The customer is : " + name );
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
     }
 }
