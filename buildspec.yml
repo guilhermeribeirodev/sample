@@ -19,4 +19,3 @@ artifacts:
     - target/sample-1.0.jar
     - appspec.yml
     - app_run.sh
-    - app_stop.sh

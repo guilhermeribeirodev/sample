@@ -7,9 +7,6 @@ files:
   - source: ./app_run.sh
     destination: /tmp
 
-  - source: ./app_stop.sh
-    destination: /tmp
-
 permissions:
     - object: /tmp/app_run.sh
       owner: root
@@ -17,11 +14,6 @@ permissions:
       type:
         - file
 
-    - object: /tmp/app_stop.sh
-      owner: root
-      mode: 777
-      type:
-        - file
 
 hooks:
   ApplicationStop:
