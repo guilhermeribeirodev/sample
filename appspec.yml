@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: target/sample-1.0-jar-with-dependencies.jar
+  - source: target/sample-1.0.jar
     destination: /tmp
 
   - source: app_run.sh

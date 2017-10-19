@@ -16,6 +16,6 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - target/sample-1.0-jar-with-dependencies.jar
+    - target/sample-1.0.jar
     - appspec.yml
     - app_run.sh
