@@ -1,15 +1,14 @@
 package org.test;
 
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
 
     @RequestMapping("/")
     public String index() {
-        return "I'm working with:" + System.getenv("CUSTOMER");
+        return "<h2>I'm working with customer : " + System.getenv("CUSTOMER") + "</h2>";
     }
 
 }
