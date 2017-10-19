@@ -7,7 +7,7 @@ package org.test;
  */
 public class Main 
 {
-    public static void main( String[] args )
+    public  void asd( String[] args )
     {
         //remove the line below and replace with your code.
         String name = System.getenv("CUSTOMER");
