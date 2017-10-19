@@ -7,7 +7,12 @@ files:
   - source: app_run.sh
     destination: /tmp
 
-
+permissions:
+    - object: /tmp/app_run.sh
+      owner: root
+      mode: 777
+      type:
+        - file
 
 hooks:
   ApplicationStart:
