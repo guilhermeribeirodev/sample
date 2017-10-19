@@ -4,13 +4,13 @@ files:
   - source: target/sample-1.0-jar-with-dependencies.jar
     destination: /tmp
 
-  - source: ./app_run.sh
+  - source: app_run.sh
     destination: /tmp
 
 
 
 hooks:
-  AfterInstall:
-      - location: ./app_run.sh
+  ApplicationStart:
+      - location: app_run.sh
         timeout: 180
 
