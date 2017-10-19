@@ -4,10 +4,10 @@ files:
   - source: target/sample-1.0.jar
     destination: /tmp
 
-  - source: app_run.sh
+  - source: ./app_run.sh
     destination: /tmp
 
-  - source: app_stop.sh
+  - source: ./app_stop.sh
     destination: /tmp
 
 permissions:
