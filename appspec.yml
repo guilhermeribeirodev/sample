@@ -8,10 +8,10 @@ files:
     destination: /tmp
 
 
+
 hooks:
   ApplicationStart:
       - location: app_run.sh
         timeout: 180
         runas: ec2-user
-
 
